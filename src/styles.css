@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap');
+
+@layer base {
+    body {
+        @apply min-h-screen font-roboto bg-[url(./assets/images/bg.jpg)] bg-cover bg-center bg-no-repeat text-white
+    }
+}
+
+@layer components {
+    .container {
+        @apply px-8 mx-auto xsmall:max-w-none sm:max-w-[640px] md:max-w-[750px] lg:max-w-[970px] xl:max-w-[1200px]
+    }
+
+    .wrapper {
+        @apply h-screen min-h-[870px] sm:min-h-[850px] xl:min-h-[899px]
+    }
+}
+
+@layer utilities {
+    .list-item {
+        @apply relative after:absolute after:block after:w-full after:h-[2px] after:-bottom-1 after:bg-white after:opacity-0 hover:after:opacity-100 after:duration-500
+    }
+
+    .active {
+        @apply after:opacity-100
+    }
+
+    .show {
+        @apply translate-x-0 touch-none
+    }
+}

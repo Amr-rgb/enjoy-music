@@ -6,8 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="wrapper py-6 flex flex-col justify-between">
+        <header>
+            <div class="container flex items-center justify-between">
+                <nav>
+                    <div id="menu" class="z-50 relative cursor-pointer text-2xl lg:hidden"><i class="fa-solid fa-bars"></i></div>
     
+                    <ul id="nav" class="z-40 fixed inset-0 bg-black flex flex-col items-center justify-center gap-y-6 text-xl font-poppins font-semibold lg:static lg:inset-auto lg:flex-row lg:bg-transparent lg:text-base lg:gap-x-8 translate-x-full lg:translate-x-0 duration-700 ease-in-out">
+                        <li class="active list-item"><a href="/">Home</a></li>
+                        <li class="list-item"><a href="/">Info</a></li>
+                        <li class="list-item"><a href="/">Offer</a></li>
+                        <li class="list-item"><a href="/">Contact</a></li>
+                        <li class="mt-4 relative lg:mt-0"><input class="text-[#4057EB] placeholder:text-right placeholder:text-[#4057EB] text-sm py-2 pr-12 lg:py-2 lg:px-4 lg:pr-12 text-right rounded-full w-52" type="text" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass text-right text-[#4232F4] absolute top-1/2 -translate-y-1/2 right-4"></i></li>
+                    </ul>
+                </nav>
+    
+                <a class="logo z-50 w-10 xl:w-12" href="/"><img src="./assets/images/logo.png" alt="logo"></a>
+            </div>
+        </header>
+    
+        <main>
+            <div class="container flex flex-col items-start gap-2 xl:gap-4">
+                <h1 class="font-anton text-8xl mb-2 xl:text-9xl xl:mb-0"><span class="block">enjoy</span>
+                    <span class="block">the</span> 
+                    <span class="block">music</span></h1>
+        
+                <p class="font-roboto xl:text-xl">Lorem ipsum dolor sit amet, con <br />
+                    sectetur adipiscing elit sed d</p>
+                
+                <button class="bg-white text-[#122A7A] font-roboto font-bold tracking-[3px] py-2 px-12 rounded-full xl:text-lg xl:px-14">Learn More</button>
+            </div>
+        </main>
+    
+        <footer class="">
+            <div class="container flex flex-col gap-20 lg:flex-row-reverse lg:justify-between">
+                <div class="info text-right grid gap-2">
+                    <p class="font-anton text-2xl xl:text-3xl">NOV. 15, 2021 |  9 AM</p>
+                    <p class="font-roboto font-medium text-xs xl:text-sm">AV. LOREM IPSUM DOLOR 2045 <br />
+                        DOLOR SIT AMET - ADRESS</p>
+                </div>
+                <div class="links flex justify-between items-end flex-wrap gap-y-4 gap-x-20">
+                    <div class="social flex justify-between gap-4 xl:gap-8">
+                        <a class="flex flex-col gap-1 text-sm xsmall:flex-row xsmall:items-center xsmall:gap-2 sm:flex-row sm:items-center sm:gap-2 xl:text-base" href="https://www.instagram.com/amr.taha.abdulhaleem/" target="_blank">
+                            <i class="fa-brands fa-instagram text-lg xl:text-xl"></i>
+                            <p>Amr.Taha.Abdulhaleem</p>
+                        </a>
+                        <a class="flex flex-col gap-1 text-sm xsmall:flex-row xsmall:items-center xsmall:gap-2 sm:flex-row sm:items-center sm:gap-2 xl:text-base" href="https://dribbble.com/amrtaha23" target="_blank">
+                            <i class="fa-brands fa-dribbble text-lg xl:text-xl"></i>
+                            <p>amrtaha23</p>
+                        </a>
+                    </div>
+    
+                    <a class="font-anton tracking-wide xl:text-lg" href="https://amrtaha.com" target="_blank">www.amrtaha.com</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

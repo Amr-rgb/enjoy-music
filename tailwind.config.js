@@ -3,7 +3,19 @@ module.exports = {
     "./src/**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'anton': ['Anton', 'sans-serif'],
+      'roboto': ['Roboto', 'sans-serif'],
+      'poppins': ['Poppins', 'sans-serif'],
+    },
+    extend: {
+      screens: {
+        xsmall: {
+          min: '350px',
+          max: '640px'
+        }
+      }
+    },
   },
   plugins: [],
 }
